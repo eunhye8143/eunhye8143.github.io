@@ -1,196 +1,222 @@
 <!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="다크 테마 기반의 반응형 개인 프로페셔널 웹사이트">
-  <title>eunhye8143 | Portfolio</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script defer src="./script.js"></script>
-  <script defer src="./game.js"></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">본문으로 바로가기</a>
-  <header class="site-header">
-    <div class="brand">
-      <span class="brand-mark">E</span>
-      <div>
-        <p class="eyebrow">Portfolio</p>
-        <h1>eunhye8143</h1>
-      </div>
-    </div>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      메뉴
-    </button>
-    <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#research">Research</a>
-      <a href="#games">Games</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="삼성전자 Application개발1그룹 김은혜의 다크 테마 반응형 개인 웹사이트">
+    <title>eunhye8143 | Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+    <script defer src="./game.js"></script>
+    <script defer src="./galaga.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
 
-  <main id="main">
-    <section id="home" class="hero section surface">
-      <p class="eyebrow">Dark Theme / Responsive / Static</p>
-      <h2>정적 프로페셔널 웹사이트와 지렁이 게임의 첫 완성본</h2>
-      <p>
-        반응형 구조, 다크 테마, 내부 섹션 링크, 그리고 키보드와 모바일 버튼으로 조작하는 지렁이 게임을
-        한 화면 안에 담았습니다.
-      </p>
-      <div class="hero-stats" aria-label="핵심 요약">
-        <article>
-          <strong>Responsive</strong>
-          <span>375 / 768 / 1440 검증 대상</span>
-        </article>
-        <article>
-          <strong>Games</strong>
-          <span>시작, 일시정지, 재시작, 최고 점수</span>
-        </article>
-        <article>
-          <strong>Static</strong>
-          <span>HTML, CSS, JavaScript만 사용</span>
-        </article>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">E</span>
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h1>eunhye8143</h1>
+        </div>
       </div>
-    </section>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">메뉴</button>
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <section id="about" class="section card">
-      <div class="section-head">
-        <p class="eyebrow">About</p>
-        <h2>프로필 개요</h2>
-      </div>
-      <p>
-        확인된 개인 정보가 충분하지 않아 공개 범위는 보수적으로 유지했습니다.
-      </p>
-      <div class="info-grid">
-        <article class="mini-card">
-          <h3>전문성</h3>
-          <p>정적 웹 인터페이스, 반응형 레이아웃, 게임 UI, 상태 관리.</p>
-        </article>
-        <article class="mini-card">
-          <h3>프로필 참고</h3>
-          <p>[사람 확인 필요]</p>
-        </article>
-      </div>
-    </section>
+    <main id="main">
+      <section id="home" class="hero section surface">
+        <p class="eyebrow">삼성전자 / Application개발1그룹</p>
+        <h2>김은혜의 페이지</h2>
+        <p>
+          반응형 구조, 다크 테마, 두 개의 독립 게임 영역, 그리고 모바일 터치 조작까지 담은 정적 프로페셔널 웹사이트입니다.
+        </p>
+        <div class="hero-stats" aria-label="핵심 요약">
+          <article>
+            <strong>Responsive</strong>
+            <span>375 / 768 / 1440 검증</span>
+          </article>
+          <article>
+            <strong>Games</strong>
+            <span>Snake, Galaga, 키보드·터치 지원</span>
+          </article>
+          <article>
+            <strong>Static</strong>
+            <span>HTML, CSS, JavaScript만 사용</span>
+          </article>
+        </div>
+      </section>
 
-    <section id="projects" class="section card">
-      <div class="section-head">
-        <p class="eyebrow">Projects</p>
-        <h2>프로젝트</h2>
-      </div>
-      <div class="card-grid">
-        <article class="project-card">
-          <h3>Portfolio Shell</h3>
-          <p>다크 테마, 반응형 내비게이션, 내부 링크 구조.</p>
-        </article>
-        <article class="project-card">
-          <h3>Snake Game</h3>
-          <p>키보드, WASD, 모바일 버튼, 점수, 충돌, 최고 점수.</p>
-        </article>
-        <article class="project-card">
-          <h3>Enemy Cycle</h3>
-          <p>랜덤 이동 적이 5초 주기로 폭발하고 다시 생성됩니다.</p>
-        </article>
-      </div>
-    </section>
+      <section id="about" class="section card">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>프로필 개요</h2>
+        </div>
+        <p>확인된 경력과 현재 업무 중심으로 정리했습니다.</p>
+        <div class="info-grid">
+          <article class="mini-card">
+            <h3>업무 성향</h3>
+            <p>정적 인터페이스, 반응형 레이아웃, Watch 중심 앱 UI와 상태 관리에 익숙합니다.</p>
+          </article>
+        </div>
+      </section>
 
-    <section id="experience" class="section card">
-      <div class="section-head">
-        <p class="eyebrow">Experience</p>
-        <h2>경력</h2>
-      </div>
-      <div class="timeline">
-        <article>
-          <span class="timeline-label">현재</span>
-          <h3>[사람 확인 필요]</h3>
-          <p>경력 서술은 공개 확인 후 확정합니다.</p>
-        </article>
-      </div>
-    </section>
+      <section id="projects" class="section card">
+        <div class="section-head">
+          <p class="eyebrow">Projects</p>
+          <h2>프로젝트</h2>
+        </div>
+        <div class="card-grid">
+          <article class="project-card">
+            <h3>Portfolio Shell</h3>
+            <p>다크 테마, 반응형 내비게이션, 정적 콘텐츠 레이아웃.</p>
+          </article>
+          <article class="project-card">
+            <h3>Snake Game</h3>
+            <p>키보드, WASD, 모바일 버튼, 점수, 최고 점수, 충돌 처리.</p>
+          </article>
+          <article class="project-card">
+            <h3>Galaga Game</h3>
+            <p>상하좌우 이동, 낙하 장애물 회피, 점수, 게임 오버, 재시작.</p>
+          </article>
+        </div>
+      </section>
 
-    <section id="research" class="section card">
-      <div class="section-head">
-        <p class="eyebrow">Research</p>
-        <h2>리서치</h2>
-      </div>
-      <div class="card-grid">
-        <article class="project-card">
-          <h3>Access & Motion</h3>
-          <p>반응형 대비, 초점 상태, 모바일 터치 입력을 우선 검토합니다.</p>
-        </article>
-        <article class="project-card">
-          <h3>Watch Context</h3>
-          <p>삼성전자 Watch application 관련 표기는 [사람 확인 필요]입니다.</p>
-        </article>
-      </div>
-    </section>
+      <section id="experience" class="section card">
+        <div class="section-head">
+          <p class="eyebrow">Experience</p>
+          <h2>경력</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span class="timeline-label">~ 21년</span>
+            <h3>Tizen Watch Call application 개발</h3>
+            <p>삼성전자 Watch 관련 application 개발 경험을 바탕으로 UI와 흐름을 설계했습니다.</p>
+          </article>
+          <article>
+            <span class="timeline-label">~ 26년</span>
+            <h3>Galaxy Watch Home 개발</h3>
+            <p>Galaxy Watch Home 개발 경험을 반영해 정적 UI와 상태 전환을 구성했습니다.</p>
+          </article>
+        </div>
+      </section>
 
-    <section id="games" class="section card games-section" data-snake-app>
-      <div class="section-head">
-        <p class="eyebrow">Games</p>
-        <h2>Snake Game</h2>
-      </div>
-
-      <div class="game-layout">
-        <div class="game-stage">
-          <div class="game-hud" aria-label="게임 상태">
-            <div><span>Score</span><strong data-score>0</strong></div>
-            <div><span>Best</span><strong data-best-score>0</strong></div>
-            <div><span>Status</span><strong data-status>대기 중</strong></div>
-          </div>
-          <div class="game-board-wrap">
-            <div class="game-board" data-board role="application" aria-label="지렁이 게임 보드"></div>
-          </div>
+      <section id="games" class="section card games-section">
+        <div class="section-head">
+          <p class="eyebrow">Games</p>
+          <h2>Games</h2>
         </div>
 
-        <aside class="game-panel">
-          <p class="game-message" data-message>시작 버튼을 누르거나 스페이스를 눌러 게임을 시작하세요.</p>
-          <div class="button-row">
-            <button type="button" data-action="start">시작</button>
-            <button type="button" data-action="pause">일시정지</button>
-            <button type="button" data-action="restart">재시작</button>
-          </div>
-          <div class="touch-pad" aria-label="모바일 방향 버튼">
-            <span></span>
-            <button type="button" data-direction="up" aria-label="위로 이동">▲</button>
-            <span></span>
-            <button type="button" data-direction="left" aria-label="왼쪽으로 이동">◀</button>
-            <button type="button" data-direction="down" aria-label="아래로 이동">▼</button>
-            <button type="button" data-direction="right" aria-label="오른쪽으로 이동">▶</button>
-          </div>
-          <ul class="game-notes">
-            <li>방향키와 WASD를 모두 지원합니다.</li>
-            <li>반대 방향 입력은 막습니다.</li>
-            <li>적은 랜덤 이동하며 5초마다 폭발 후 재생성됩니다.</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
+        <div class="game-switcher" role="tablist" aria-label="게임 선택">
+          <button type="button" class="game-switcher-btn is-active" data-game-switch="snake" aria-pressed="true">Snake Game</button>
+          <button type="button" class="game-switcher-btn" data-game-switch="galaga" aria-pressed="false">Galaga Game</button>
+        </div>
 
-    <section id="contact" class="section card">
-      <div class="section-head">
-        <p class="eyebrow">Contact</p>
-        <h2>연락</h2>
-      </div>
-      <div class="card-grid contact-grid">
-        <article class="project-card">
-          <h3>GitHub Pages</h3>
-          <p><a href="https://eunhye8143.github.io" target="_blank" rel="noreferrer">eunhye8143.github.io</a></p>
-        </article>
-        <article class="project-card">
-          <h3>Repository</h3>
-          <p><a href="https://github.com/eunhye8143/eunhye8143.github.io.git" target="_blank" rel="noreferrer">GitHub 저장소</a></p>
-        </article>
-        <article class="project-card">
-          <h3>Email</h3>
-          <p>[사람 확인 필요]</p>
-        </article>
-      </div>
-    </section>
-  </main>
-</body>
+        <div class="game-panels">
+          <section class="game-app" data-game-app="snake">
+            <div class="game-layout">
+              <div class="game-stage">
+                <div class="game-hud" aria-label="게임 상태">
+                  <div><span>Score</span><strong data-score>0</strong></div>
+                  <div><span>Best</span><strong data-best-score>0</strong></div>
+                  <div><span>Status</span><strong data-status>대기 중</strong></div>
+                </div>
+                <div class="game-board-wrap">
+                  <div class="game-board" data-board role="application" aria-label="지렁이 게임 보드"></div>
+                </div>
+              </div>
+
+              <aside class="game-panel">
+                <p class="game-message" data-message>시작 버튼을 누르거나 스페이스를 눌러 게임을 시작하세요.</p>
+                <div class="button-row">
+                  <button type="button" data-action="start">시작</button>
+                  <button type="button" data-action="pause">일시정지</button>
+                  <button type="button" data-action="restart">재시작</button>
+                </div>
+                <div class="touch-pad" aria-label="모바일 방향 버튼">
+                  <span></span>
+                  <button type="button" data-direction="up" aria-label="위로 이동">▲</button>
+                  <span></span>
+                  <button type="button" data-direction="left" aria-label="왼쪽으로 이동">◀</button>
+                  <button type="button" data-direction="down" aria-label="아래로 이동">▼</button>
+                  <button type="button" data-direction="right" aria-label="오른쪽으로 이동">▶</button>
+                </div>
+                <ul class="game-notes">
+                  <li>방향키와 WASD를 모두 지원합니다.</li>
+                  <li>반대 방향 입력은 막아 둡니다.</li>
+                  <li>랜덤 적이 5초마다 폭발 후 다시 생성됩니다.</li>
+                </ul>
+              </aside>
+            </div>
+          </section>
+
+          <section class="game-app" data-game-app="galaga" hidden>
+            <div class="game-layout">
+              <div class="game-stage">
+                <div class="game-hud" aria-label="게임 상태">
+                  <div><span>Score</span><strong data-galaga-score>0</strong></div>
+                  <div><span>Best</span><strong data-galaga-best-score>0</strong></div>
+                  <div><span>Status</span><strong data-galaga-status>대기 중</strong></div>
+                </div>
+                <div class="game-board-wrap">
+                  <canvas class="galaga-canvas" data-galaga-canvas width="480" height="640" aria-label="갤러그 게임 캔버스"></canvas>
+                </div>
+              </div>
+
+              <aside class="game-panel">
+                <p class="game-message" data-galaga-message>시작 버튼을 누르거나 스페이스를 눌러 게임을 시작하세요.</p>
+                <div class="button-row">
+                  <button type="button" data-galaga-action="start">시작</button>
+                  <button type="button" data-galaga-action="pause">일시정지</button>
+                  <button type="button" data-galaga-action="restart">재시작</button>
+                </div>
+                <div class="touch-pad" aria-label="모바일 방향 버튼">
+                  <span></span>
+                  <button type="button" data-galaga-direction="up" aria-label="위로 이동">▲</button>
+                  <span></span>
+                  <button type="button" data-galaga-direction="left" aria-label="왼쪽으로 이동">◀</button>
+                  <button type="button" data-galaga-direction="down" aria-label="아래로 이동">▼</button>
+                  <button type="button" data-galaga-direction="right" aria-label="오른쪽으로 이동">▶</button>
+                </div>
+                <ul class="game-notes">
+                  <li>상하좌우 이동이 가능합니다.</li>
+                  <li>장애물을 하나 피할 때마다 10점이 올라갑니다.</li>
+                  <li>장애물에 닿으면 게임 오버가 됩니다.</li>
+                </ul>
+              </aside>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="contact" class="section card">
+        <div class="section-head">
+          <p class="eyebrow">Contact</p>
+          <h2>연락</h2>
+        </div>
+        <div class="card-grid contact-grid">
+          <article class="project-card">
+            <h3>GitHub Pages</h3>
+            <p><a href="https://eunhye8143.github.io" target="_blank" rel="noreferrer">eunhye8143.github.io</a></p>
+          </article>
+          <article class="project-card">
+            <h3>Repository</h3>
+            <p><a href="https://github.com/eunhye8143/eunhye8143.github.io.git" target="_blank" rel="noreferrer">GitHub 저장소</a></p>
+          </article>
+          <article class="project-card">
+            <h3>Email</h3>
+            <p>[사람 확인 필요]</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

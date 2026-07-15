@@ -358,6 +358,7 @@
     const core = createCore({ storage });
     const cellMap = [];
     let timerId = null;
+    let isActive = false;
 
     function buildBoard() {
       if (!board) return;
@@ -374,13 +375,13 @@
     }
 
     function ensureTimer() {
-      if (core.state.status === 'running' && timerId === null) {
+      if (isActive && core.state.status === 'running' && timerId === null) {
         timerId = window.setInterval(() => {
           core.tick(Date.now());
           render();
           syncTimer();
         }, 100);
-      } else if (core.state.status !== 'running' && timerId !== null) {
+      } else if ((!isActive || core.state.status !== 'running') && timerId !== null) {
         window.clearInterval(timerId);
         timerId = null;
       }
@@ -450,6 +451,7 @@
     }
 
     function applyDirection(direction) {
+      if (!isActive) return;
       if (core.state.status === 'idle') {
         core.start(Date.now());
       }
@@ -483,6 +485,7 @@
     });
 
     window.addEventListener('keydown', (event) => {
+      if (!isActive) return;
       const key = event.key.toLowerCase();
       const map = {
         arrowup: { x: 0, y: -1 },
@@ -516,12 +519,17 @@
     buildBoard();
     render();
 
-    return {
+    const api = {
       core,
       render,
       begin,
       pause,
       restart,
+      setActive(nextActive) {
+        isActive = Boolean(nextActive);
+        render();
+        syncTimer();
+      },
       stop() {
         if (timerId !== null) {
           window.clearInterval(timerId);
@@ -529,6 +537,12 @@
         }
       },
     };
+
+    if (global.GameHub && typeof global.GameHub.registerGame === 'function') {
+      global.GameHub.registerGame('snake', api);
+    }
+
+    return api;
   }
 
   global.SnakeGame = {
