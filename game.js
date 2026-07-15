@@ -343,7 +343,7 @@
   }
 
   function initSnakeGame(root = document) {
-    const host = root.querySelector('[data-snake-app]');
+    const host = root.querySelector('[data-snake-app], [data-game-app="snake"]');
     if (!host) return null;
 
     const board = host.querySelector('[data-board]');
